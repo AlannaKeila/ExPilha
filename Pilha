@@ -1,0 +1,18 @@
+public class Pilha {
+  
+    public Object[] pilha;
+    public int posicaoPilha;
+    
+    public Pilha() {
+        this.posicaoPilha = -1;
+  //indica que esta nula, vazia, pois não existe posição menor que 0 na pilha
+        this.pilha = new Objeto[10];
+  // criação de uma pilha com 10 posições 
+    }
+    public boolean pilhaVazia() {
+      //está vazia
+      if (this.posicaoPilha == -1){ 
+        return true;
+      }
+        return false;
+        
